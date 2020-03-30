@@ -130,6 +130,7 @@ public class NodeSearcher implements Runnable{
 	}
 	private void wordCount(String webPageText)
 	{
+		System.out.println("Word Count");
 		String[] words = webPageText.split("\\W+");
 		for (String word : words) {	
 			wordcount.addWord(word.trim());
